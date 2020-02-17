@@ -91,4 +91,4 @@ Material:
     - _myColour2: {r: 0.05549128, g: 0.2735849, b: 0.07184831, a: 1}
     - _myEmission: {r: 0.0731132, g: 0.26859263, b: 0.5, a: 1}
     - _myNormal: {r: 0, g: 0.6815171, b: 1, a: 1}
-    - _myVector: {r: 0.5, g: 1, b: 1, a: 1}
+    - _myVector: {r: -0.16, g: 1, b: 1, a: 1}
