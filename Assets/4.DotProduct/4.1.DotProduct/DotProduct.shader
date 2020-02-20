@@ -25,6 +25,8 @@
 			half dotp = dot(IN.viewDir, o.Normal);
 			o.Albedo = float3(dotp, 1, 1);
 			o.Albedo *= _Color;
+			//o.Emission = float3(dotp, 1, 1);
+			//o.Albedo.gb = float2(1-dot(IN.viewDir, o.Normal), 0);
 		}
 
 		ENDCG
