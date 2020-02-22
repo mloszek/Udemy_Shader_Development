@@ -12,7 +12,7 @@
 
 		struct Input
 		{
-			float2 uvMainTex;
+			float2 uv_MainTex;
 		};
 
 		fixed4 _myColour;

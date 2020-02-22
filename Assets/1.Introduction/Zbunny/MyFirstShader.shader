@@ -23,9 +23,9 @@
 
 		void surf(Input IN, inout SurfaceOutput o)
 		{
-			o.Albedo = _myColour.rgb;				 // rgb(a) == xyz(w)
+			o.Albedo = _myColour.rgba;				 // rgb(a) == xyz(w)
 			o.Emission = _myEmission.xyz;			 //
-			o.Normal = _myNormal.rgba;				 //
+			o.Normal = _myNormal.rgb;				 //
 		}
 
 		ENDCG	
