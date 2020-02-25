@@ -29,8 +29,10 @@
 		void surf(Input IN, inout SurfaceOutputStandardSpecular o)	//SurfaceOutputStandardSpecular
 		{
 			o.Albedo = _Colour.rgb;
-			o.Smoothness = tex2D(_MetallicTex, IN.uv_MetallicTex).r;
+			o.Smoothness = tex2D(_MetallicTex, IN.uv_MetallicTex);
 			o.Specular = _SpecColour.rgb;
+			//Challenge solution:
+			//o.Smoothness = 1 - tex2D(_MetallicTex, IN.uv_MetallicTex);
 		}
 
 		ENDCG

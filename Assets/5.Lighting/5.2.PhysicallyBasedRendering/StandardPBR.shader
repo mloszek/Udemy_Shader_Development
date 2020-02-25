@@ -5,6 +5,7 @@
 		_Colour("Colour", Color) = (1,1,1,1)
 		_MetallicTex("Metallic (R)", 2D) = "white" {}
 		_Metallic("Metallic", Range(0,1)) = 0
+		_Emission("Emission", Range(0,2)) = 0
 	}
 
 	SubShader
@@ -25,12 +26,15 @@
 		float4 _Colour;
 		sampler2D _MetallicTex;
 		half _Metallic;
+		half _Emission;
 
 		void surf(Input IN, inout SurfaceOutputStandard o)	//SurfaceOutputStandard instead of SurfaceOutput, because Standard is declared in pragma above
 		{
 			o.Albedo = _Colour.rgb;
 			o.Smoothness = tex2D(_MetallicTex, IN.uv_MetallicTex).r;
 			o.Metallic = _Metallic;
+			//Challenge solution:
+			o.Emission = tex2D(_MetallicTex, IN.uv_MetallicTex) * _Emission;
 		}
 
 		ENDCG
