@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HelloShader2
-  m_Shader: {fileID: 4800000, guid: 343ad60c39f66fe4cacb25ac039ced6d, type: 3}
+  m_Name: HelloShader20
+  m_Shader: {fileID: 4800000, guid: 644c66b88587169499e96cf23a65cf8c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4a43a15b4addb994c9f5f94c1b309308, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -55,6 +55,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RampTex:
+        m_Texture: {fileID: 2800000, guid: 91cacbabe6851c5498a711abd9c11769, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _myBump:
+        m_Texture: {fileID: 2800000, guid: d683b450902233d40b60d78aca771a68, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _myCube:
+        m_Texture: {fileID: 8900000, guid: 656a59a5ff93c46498416d97e5c16b66, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _myDiffuse:
+        m_Texture: {fileID: 2800000, guid: e5a4d63647a70e8428cb21cbb5ca3596, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -63,9 +79,13 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Intensity: 0.635
     - _Metallic: 0
     - _Mode: 0
     - _MySliderValue: 10
+    - _NormX: 8.13
+    - _NormY: 9.02
+    - _NormZ: 2.21
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -73,11 +93,14 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - _myScale: 1
+    - _mySlider: 2
     m_Colors:
     - _AmbientColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.091, g: 0, b: 0.68275833, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _myColour: {r: 1, g: 0, b: 0, a: 1}
+    - _myColor: {r: 1, g: 0, b: 0, a: 1}
+    - _myColour: {r: 0.079832695, g: 0.36282018, b: 0.735849, a: 0.23921569}
     - _myColour2: {r: 0.05549128, g: 0.2735849, b: 0.07184831, a: 1}
     - _myEmission: {r: 0.0731132, g: 0.26859263, b: 0.5, a: 1}
     - _myNormal: {r: 0, g: 0.6815171, b: 1, a: 1}

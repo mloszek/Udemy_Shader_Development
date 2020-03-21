@@ -1,4 +1,4 @@
-﻿Shader "Holistic/CustomBlinn"
+﻿Shader "Holistic/Challenge4Colors"
 {
 	Properties
 	{
@@ -6,11 +6,11 @@
 	}
 		SubShader
 	{
-		Tags
+		/*Tags
 		{
 			"Queue" = "Geometry"
 		}
-		LOD 200
+		LOD 200*/
 
 		CGPROGRAM
 			#pragma surface surf CustomBlinn  
@@ -25,7 +25,7 @@
 			float spec = pow(nh, 48.0);
 
 			half4 c;
-			c.rgb = (o.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * spec) * atten;
+			c.rgb = (o.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * spec) * atten * _SinTime;
 			c.a = o.Alpha;
 			return c;
 		}
