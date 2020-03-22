@@ -1,8 +1,12 @@
-﻿Shader "Holistic/Hole"
+﻿Shader "Holistic/StencilWindow"
 {
 	Properties
 	{
-		_MainTex("Diffuse", 2D) = "white" {}
+		_Color("Main Color", Color) = (1,1,1,1)
+
+		_SRef("Stencil Ref", Float) = 1
+		[Enum(UnityEngine.Rendering.CompareFunction)] _SComp("Stencil Comp", Float) = 8
+		[Enum(UnityEngine.Rendering.StencilOp)] _SOp("Stencil Op", Float) = 2
 	}
 
 	SubShader
@@ -17,9 +21,9 @@
 
 		Stencil
 		{
-			Ref 1
-			Comp always
-			Pass replace
+			Ref [_SRef]
+			Comp [_SComp]
+			Pass [_SOp]
 		}
 
 		CGPROGRAM
