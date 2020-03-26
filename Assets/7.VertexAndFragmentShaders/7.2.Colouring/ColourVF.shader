@@ -1,4 +1,4 @@
-﻿Shader "Unlit/ColourVF"
+﻿Shader "Holistic/ColourVF"
 {
     SubShader
     {
